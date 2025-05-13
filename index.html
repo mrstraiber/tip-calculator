@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tip Calculator</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="section-logo">
+          <img src="./assets/logo.svg" alt="logo" class="logo" />
+        </div>
+        <div class="tip-section-container">
+          <!-- start of left section -->
+          <div class="left">
+            <form action="/Tip-Calculator">
+                  <div class="bill-input-section">
+                    <div class="error-section">
+                      <div>
+                        <label for="bill" class="text-left bill-input-label">Bill</label>
+                      </div>
+                      <div>
+                        <p class="error-message hidden" id="error-message1">can't be zero !</p>
+                      </div>
+                    </div>
+                    <div class="input-container">
+                      <img class="icons icon-dollar" id="icon-dollar" src="./assets/icon-dollar.svg" alt="dollar"/>
+                      <input class="bill-input" type="number" id="bill" placeholder="0"/>
+                    </div>
+                  </div>
+              <!----------------------------------------------------------->
+                <div class="tip-section">
+                  <div class="error-section">
+                    <div>
+                      <p class="text-left">Select Tip %</p>
+                    </div>
+                    <div>
+                      <div>
+                        <p class="error-message hidden" id="error-message2">please select a tip !</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tip-button">
+                    <div class="btn-tip tip" data-value="5">5%</div>
+                    <div class="btn-tip tip" data-value="10">10%</div>
+                    <div class="btn-tip tip" data-value="15">15%</div>
+                    <div class="btn-tip tip" data-value="25">25%</div>
+                    <div class="btn-tip tip" data-value="50">50%</div>
+                    <div class="btn-tip" id="btn-custom">Custom</div>
+                    <input type="number" id="custom-input" class="hidden btn-tip-custom tip-cutom" placeholder="%0">
+                  </div>
+                </div>
+                <!----------------------------------------------------------->
+                <div class="people-section">
+                  <div class="error-section">
+                    <div>
+                      <label for="people" class="text-left">Number of People</label>
+                    </div>
+                    <div>
+                      <p class="error-message hidden" id="error-message3">can't be zero !</p>
+                    </div>
+                  </div>
+                  <div class="input-container">
+                    <img class="icons icon-person" id="icon-person" src="./assets/icon-person.svg" alt="person"/>
+                    <input class="people-input" type="number" id="people" placeholder="0"/>
+                  </div>
+                </div>
+                <div class="btn-calc-section">
+                  <button type="submit" class="btn-calc" id="btn-calc">Calculate</button>
+                </div>
+            </form>
+          </div> 
+          <!-- End of left section -->
+
+          <!-- start of right section -->
+          <div class="right">
+              <div class="amount-section">
+                <div class="tip-amount-left">
+                  <h4 class="text-right">Tip Amount</h4>
+                  <p class="text-right-sm">/ person</p>
+                </div>
+                <div class="tip-amount-right">
+                  <h4 class="amount" id="tip-amount"> <span>$</span>0.00</h4>
+                </div>
+              </div>
+              <div class="total-section">
+                <div class="total-left">
+                  <h3 class="text-right">Total</h3>
+                  <p class="text-right-sm">/ person</p>
+                </div>
+                <div class="total-right">
+                  <h3 class="amount" id="total-amount"> <span>$</span>0.00</h3>
+                </div>
+              </div>
+              <div class="btn-rest-section">
+                <button class="btn-reset" id="btn-reset">RESET</button>
+              </div>
+          </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

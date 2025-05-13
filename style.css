@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+body {
+  background-color: #defff8;
+  font-family: "Oxanium";
+  font-size: 25px;
+}
+.section-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  margin-top: 4rem;
+}
+
+.tip-section-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2.2rem;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/*-left section-*/
+.left {
+  height: 400px;
+  width: 100%;
+  max-width: 500px;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.bill-input-section {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+
+.bill-input-label {
+  padding-bottom: 0.3rem;
+}
+
+.text-left {
+  text-align: left;
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  color: #4f4f4f;
+}
+
+.bill-input,
+.people-input {
+  padding: 0.4rem;
+  text-align: right;
+  width: 100%;
+  border: none;
+  background-color: #dff5f0;
+  font-size: 1.7rem;
+  color: #0e6655;
+  font-weight: 600;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.icons {
+  padding: 0.9rem;
+  text-align: right;
+  border: none;
+  background-color: #dff5f0;
+  font-size: 1.5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.tip-button {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.btn-tip {
+  background-color: #0e6655;
+  color: #fff;
+  padding: 0.6rem 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+.btn-tip:hover {
+  background-color: #2ba88f;
+}
+
+#btn-custom {
+  background-color: #dff5f0;
+  color: #0c7862;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+#btn-custom:hover {
+  background-color: #2ba88f;
+  color: #fff;
+}
+
+#custom-input {
+  width: 100%;
+  text-align: right;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+#custom-input:hover {
+  color: #0e6655;
+}
+
+.people-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.people-input {
+  text-align: right;
+}
+
+.error-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-message {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #f17474;
+}
+
+.hidden {
+  display: none;
+}
+
+.border-red-input {
+  border: 0.1rem solid #f17474;
+  border-left: none;
+}
+
+.border-red-icon {
+  border: 0.1rem solid #f17474;
+  border-right: none;
+}
+/* -- calc button  -- */
+
+.btn-calc-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-bottom: 0;
+}
+.btn-calc {
+  background-color: #0e6655;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 30%;
+}
+.btn-calc:hover {
+  background-color: #2ba88f;
+  transition: all 0.3s ease-in-out;
+}
+
+/*--right section-*/
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 400px;
+  padding: 1.5rem 1.8rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 500px;
+  background-color: #0e6655;
+}
+
+.amount-section,
+.total-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2.6rem;
+}
+
+.total-section {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+}
+
+.text-right {
+  color: #fff;
+}
+.text-right-sm {
+  font-size: 0.8rem;
+  color: #ffffffa8;
+}
+
+.amount {
+  color: #16a085;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.btn-rest-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 0;
+}
+.btn-reset {
+  background-color: #fff;
+  color: #0e6655;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+}
+.btn-reset:hover {
+  background-color: #dff5f0;
+  transition: all 0.3s ease-in-out;
+}
+
+/*-- it will activate throught JavaScript --*/
+.btn-tip-active {
+  color: #0c7862;
+  background-color: #dff5f0;
+  border: #0e6655 0.14rem dashed;
+}
+.btn-tip-active:hover {
+  color: #fff;
+}
+/*-------------------------------------------*/
+
+/* Media Queries */
+
+@media (max-width: 830px) {
+  .tip-section-container {
+    display: block;
+  }
+  .left {
+    padding-right: 0;
+  }
+  .right {
+    width: 350px;
+  }
+}
+
+@media (max-width: 425px) {
+  .tip-section-container {
+    padding: 1rem;
+  }
+  .container {
+    margin: 50px 0;
+  }
+}

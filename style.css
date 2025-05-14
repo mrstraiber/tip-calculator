@@ -29,7 +29,6 @@ body {
 .tip-section-container {
   display: flex;
   justify-content: center;
-  text-align: center;
   background-color: #fff;
   border-radius: 1rem;
   padding: 2.2rem;
@@ -223,13 +222,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 2.6rem;
-}
-
-.total-section {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 
 .text-right {
